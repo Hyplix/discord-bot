@@ -1,0 +1,10 @@
+# Production
+dist
+
+# Environment
+.env-local
+.env
+
+# Node
+node_modules
+yarn.lock
