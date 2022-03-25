@@ -10,7 +10,7 @@ export default {
             "op": 2,
             "d": {
                 "token": client.token,
-                "intents": 1 << 0,
+                "intents": 1 << 0 | 1 << 9,
                 "properties": {
                     "$browser": "hyplix",
                     "$device": "hyplix"
