@@ -1,7 +1,8 @@
 import { Socket } from "../socket/Socket";
 import { CUser } from "../structs/CUser";
-import EventEmitter from "events";
 import { Message } from "../structs/Message";
+import { Guild } from "../structs/Guild";
+import EventEmitter from "events";
 
 export interface Client {
     on(event: "ready", listener: () => void): this;
@@ -13,6 +14,8 @@ export class Client extends EventEmitter {
     public socket: Socket | null;
     public user: CUser;
     public apiURL = "https://discord.com/api/v10";
+    public commands = new Map<string, any>();
+    public guilds = new Map<string, Guild>();
 
     constructor () {
         super();
