@@ -6,6 +6,6 @@ module.exports = class extends Client {
 
         this.commands = new Collection();
         this.color = 5351140;
-        this.bot = require("../bot.json");
+        this.server = require("../server.json");
     };
 };
