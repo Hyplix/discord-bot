@@ -1,0 +1,13 @@
+{
+  "name": "hyplix-bot",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/Hyplix/discord-bot.git",
+  "author": "Neven",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "glob": "^8.0.1"
+  }
+}
