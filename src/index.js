@@ -1,9 +1,9 @@
 require("dotenv").config();
 const Hyplix = require("./structs/client");
 const client = new Hyplix({
-    intents: ["GUILDS", "GUILD_MESSAGES"],
+    intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS"],
     allowedMentions: {
-        repliedUser: false
+        parse: ["users"]
     }
 });
 
