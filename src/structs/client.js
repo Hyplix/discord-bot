@@ -5,5 +5,6 @@ module.exports = class extends Client {
         super(options);
 
         this.commands = new Collection();
+        this.color = 5351140;
     };
 };
